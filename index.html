@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasty Bites - Online Food Ordering</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#fff3e0,#ffe0b2);color:#333}
+header{background:#d84315;color:#fff;padding:12px 20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;position:sticky;top:0}
+header h1{font-size:1.5rem}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:6px 14px;border-radius:20px;background:rgba(255,255,255,.15)}
+nav a:hover{background:#fff;color:#d84315}
+.hero{text-align:center;padding:50px 20px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),linear-gradient(45deg,#bf360c,#ff8f00);color:#fff}
+.hero h2{font-size:2.2rem;margin-bottom:8px}
+.info{margin-top:14px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.info span{background:rgba(255,255,255,.2);padding:6px 14px;border-radius:20px}
+section{max-width:1100px;margin:30px auto;padding:0 16px}
+h3.title{font-size:1.6rem;color:#bf360c;margin-bottom:16px;border-left:6px solid #ff6f00;padding-left:10px}
+.offers{display:flex;flex-wrap:wrap;gap:14px}
+.offer{flex:1 1 250px;background:#fff;border:2px dashed #ff6f00;border-radius:12px;padding:16px;text-align:center}
+.offer b{color:#d84315;font-size:1.3rem;display:block}
+.cats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+.cats a{background:#fff;border:2px solid #d84315;color:#d84315;padding:8px 18px;border-radius:25px;text-decoration:none;font-weight:bold}
+.cats a:hover{background:#d84315;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.15);transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.img{height:140px;display:flex;align-items:center;justify-content:center;font-size:4.5rem}
+.body{padding:14px}
+.body h4{margin-bottom:4px}
+.body p{font-size:.9rem;color:#666;margin-bottom:8px}
+.price{font-size:1.2rem;font-weight:bold;color:#2e7d32}
+.stars{color:#ffa000}
+.btn{display:block;margin-top:10px;background:#d84315;color:#fff;text-align:center;padding:9px;border-radius:8px;text-decoration:none;font-weight:bold}
+.btn:hover{background:#ff6f00}
+.review{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.review small{color:#888}
+footer{background:#3e2723;color:#fff;text-align:center;padding:18px;margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🍴 Tasty Bites</h1>
+  <nav>
+    <a href="#offers">Offers</a><a href="#menu">Menu</a><a href="#reviews">Reviews</a><a href="#order">Order</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Delicious Food, Delivered Hot!</h2>
+  <p>Multi-cuisine restaurant serving fresh meals since 2010</p>
+  <div class="info"><span>📍 MG Road, Vijayawada</span><span>🕒 10 AM - 11 PM</span><span>⭐ 4.6 (1,250 ratings)</span><span>🚚 30 min delivery</span></div>
+</div>
+
+<section id="offers">
+  <h3 class="title">Special Offers</h3>
+  <div class="offers">
+    <div class="offer"><b>20% OFF</b>On your first order. Code: WELCOME20</div>
+    <div class="offer"><b>Buy 1 Get 1</b>On all pizzas every Tuesday</div>
+    <div class="offer"><b>Free Delivery</b>On orders above ₹499</div>
+  </div>
+</section>
+
+<section id="menu">
+  <h3 class="title">Our Menu</h3>
+  <div class="cats"><a href="#menu">🍕 Pizza</a><a href="#menu">🍔 Burgers</a><a href="#menu">🍛 Biryani</a><a href="#menu">🍰 Desserts</a><a href="#menu">🥤 Drinks</a></div>
+  <div class="grid">
+    <div class="card"><div class="img" style="background:#ffccbc">🍕</div><div class="body"><h4>Margherita Pizza</h4><p>Cheese, tomato sauce and fresh basil.</p><span class="stars">★★★★☆</span><div class="price">₹249</div><a class="btn" href="#order">Order Now</a></div></div>
+    <div class="card"><div class="img" style="background:#ffe0b2">🍔</div><div class="body"><h4>Crispy Chicken Burger</h4><p>Juicy fried chicken with lettuce and mayo.</p><span class="stars">★★★★★</span><div class="price">₹179</div><a class="btn" href="#order">Order Now</a></div></div>
+    <div class="card"><div class="img" style="background:#fff9c4">🍛</div><div class="body"><h4>Hyderabadi Biryani</h4><p>Aromatic basmati rice with spiced chicken.</p><span class="stars">★★★★★</span><div class="price">₹299</div><a class="btn" href="#order">Order Now</a></div></div>
+    <div class="card"><div class="img" style="background:#f8bbd0">🍰</div><div class="body"><h4>Chocolate Cake</h4><p>Rich, moist cake with chocolate ganache.</p><span class="stars">★★★★☆</span><div class="price">₹129</div><a class="btn" href="#order">Order Now</a></div></div>
+    <div class="card"><div class="img" style="background:#c8e6c9">🥗</div><div class="body"><h4>Greek Salad</h4><p>Fresh veggies, olives and feta cheese.</p><span class="stars">★★★★☆</span><div class="price">₹149</div><a class="btn" href="#order">Order Now</a></div></div>
+    <div class="card"><div class="img" style="background:#b3e5fc">🥤</div><div class="body"><h4>Mango Smoothie</h4><p>Chilled blend of ripe mangoes and yogurt.</p><span class="stars">★★★★★</span><div class="price">₹99</div><a class="btn" href="#order">Order Now</a></div></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h3 class="title">Customer Reviews</h3>
+  <div class="grid">
+    <div class="review"><span class="stars">★★★★★</span><p>Best biryani in town and the delivery was really quick!</p><small>- Ravi Kumar</small></div>
+    <div class="review"><span class="stars">★★★★☆</span><p>Loved the pizza. Cheese was perfect and crust was crispy.</p><small>- Priya Sharma</small></div>
+    <div class="review"><span class="stars">★★★★★</span><p>Great offers and friendly service. Highly recommended!</p><small>- Anil Reddy</small></div>
+  </div>
+</section>
+
+<section id="order">
+  <h3 class="title">Ready to Order?</h3>
+  <div class="card"><div class="body" style="text-align:center">
+    <p style="font-size:1.1rem">Call us at <b>+91 98765 43210</b> or order online for fast delivery.</p>
+    <a class="btn" href="#menu">🛒 Place Your Order</a>
+  </div></div>
+</section>
+
+<footer>&copy; 2026 Tasty Bites. All rights reserved.</footer>
+</body>
+</html>

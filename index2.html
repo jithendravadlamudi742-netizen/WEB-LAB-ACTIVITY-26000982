@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IronForge Fitness Center</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Impact,Arial Black,Arial,sans-serif;background:#111;color:#eee;letter-spacing:.5px}
+header{background:#000;padding:14px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;border-bottom:3px solid #ff3d00}
+header h1{color:#ff3d00;font-size:1.8rem;text-transform:uppercase}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a{color:#fff;text-decoration:none;text-transform:uppercase;padding:6px 12px;transition:.3s}
+nav a:hover{background:#ff3d00}
+.hero{text-align:center;padding:80px 20px;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),linear-gradient(120deg,#b71c1c,#212121)}
+.hero h2{font-size:3.2rem;text-transform:uppercase;line-height:1.1}
+.hero h2 span{color:#ff3d00}
+.hero p{font-family:Arial,sans-serif;margin:14px 0 22px;color:#ccc}
+.btn{display:inline-block;background:#ff3d00;color:#fff;padding:12px 28px;text-decoration:none;text-transform:uppercase;border:2px solid #ff3d00;transition:.3s;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{background:transparent;color:#ff3d00;transform:scale(1.05)}
+section{max-width:1100px;margin:0 auto;padding:44px 16px}
+h3{font-size:2rem;text-transform:uppercase;text-align:center;margin-bottom:26px}
+h3 span{color:#ff3d00}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.box{background:#1e1e1e;border-bottom:4px solid #ff3d00;padding:22px;text-align:center;transition:.3s}
+.box:hover{background:#2a2a2a;transform:translateY(-8px)}
+.box .ic{font-size:3rem}
+.box p,.box li{font-family:Arial,sans-serif;font-size:.9rem;color:#bbb;margin-top:6px}
+.plans{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.plan{flex:1 1 240px;max-width:320px;background:#1e1e1e;padding:26px;text-align:center;border:2px solid #333;transition:.3s}
+.plan:hover{border-color:#ff3d00;transform:scale(1.04)}
+.plan.pop{border-color:#ff3d00;background:#2b1510}
+.plan .price{font-size:2.6rem;color:#ff3d00;margin:10px 0}
+.plan ul{list-style:none;margin-bottom:18px}
+.plan li{font-family:Arial,sans-serif;padding:7px 0;border-bottom:1px solid #333;color:#ccc}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-family:Arial,sans-serif;background:#1e1e1e}
+th{background:#ff3d00;color:#fff;padding:12px;text-transform:uppercase}
+td{padding:11px;text-align:center;border-bottom:1px solid #333}
+tr:hover td{background:#2a2a2a}
+form{max-width:520px;margin:auto;background:#1e1e1e;padding:26px;display:flex;flex-direction:column;gap:12px}
+input,select{padding:11px;background:#111;color:#fff;border:1px solid #444;font-size:1rem}
+input:focus,select:focus{outline:none;border-color:#ff3d00}
+footer{background:#000;text-align:center;padding:18px;font-family:Arial,sans-serif;color:#888}
+</style>
+</head>
+<body>
+<header>
+  <h1>🏋 IronForge</h1>
+  <nav><a href="#programs">Programs</a><a href="#trainers">Trainers</a><a href="#plans">Plans</a><a href="#facilities">Facilities</a><a href="#schedule">Schedule</a><a href="#join">Join</a></nav>
+</header>
+
+<div class="hero">
+  <h2>Forge Your <span>Strongest</span> Self</h2>
+  <p>Premium equipment. Expert trainers. Real results.</p>
+  <a class="btn" href="#join">Join Now</a>
+</div>
+
+<section id="programs">
+  <h3>Workout <span>Programs</span></h3>
+  <div class="grid">
+    <div class="box"><div class="ic">💪</div><h4>Strength Training</h4><p>Build muscle with progressive weight programs.</p></div>
+    <div class="box"><div class="ic">🔥</div><h4>Fat Burn HIIT</h4><p>High intensity intervals to torch calories.</p></div>
+    <div class="box"><div class="ic">🧘</div><h4>Yoga &amp; Flexibility</h4><p>Improve mobility, balance and recovery.</p></div>
+    <div class="box"><div class="ic">🏃</div><h4>Cardio Endurance</h4><p>Boost stamina with guided cardio plans.</p></div>
+  </div>
+</section>
+
+<section id="trainers">
+  <h3>Expert <span>Trainers</span></h3>
+  <div class="grid">
+    <div class="box"><div class="ic">👨‍🏫</div><h4>Arjun Rao</h4><p>Head Coach - Strength &amp; Conditioning</p></div>
+    <div class="box"><div class="ic">👩‍🏫</div><h4>Sneha Patel</h4><p>Yoga &amp; Mobility Specialist</p></div>
+    <div class="box"><div class="ic">🧑‍🏫</div><h4>Karthik Varma</h4><p>HIIT &amp; Fat Loss Expert</p></div>
+  </div>
+</section>
+
+<section id="plans">
+  <h3>Membership <span>Plans</span></h3>
+  <div class="plans">
+    <div class="plan"><h4>BASIC</h4><div class="price">₹999</div><ul><li>Gym floor access</li><li>Locker facility</li><li>1 month validity</li></ul><a class="btn" href="#join">Choose</a></div>
+    <div class="plan pop"><h4>PRO ★ POPULAR</h4><div class="price">₹2,499</div><ul><li>All Basic features</li><li>Group classes</li><li>Diet consultation</li><li>3 months validity</li></ul><a class="btn" href="#join">Choose</a></div>
+    <div class="plan"><h4>ELITE</h4><div class="price">₹8,999</div><ul><li>All Pro features</li><li>Personal trainer</li><li>Steam &amp; sauna</li><li>12 months validity</li></ul><a class="btn" href="#join">Choose</a></div>
+  </div>
+</section>
+
+<section id="facilities">
+  <h3>Our <span>Facilities</span></h3>
+  <div class="grid">
+    <div class="box"><div class="ic">🏋</div><p>Free weights zone</p></div>
+    <div class="box"><div class="ic">🚴</div><p>Cardio deck</p></div>
+    <div class="box"><div class="ic">🛁</div><p>Steam &amp; sauna</p></div>
+    <div class="box"><div class="ic">🥤</div><p>Protein bar</p></div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h3>Class <span>Schedule</span></h3>
+  <div class="tbl"><table>
+    <tr><th>Time</th><th>Mon</th><th>Wed</th><th>Fri</th></tr>
+    <tr><td>6:00 AM</td><td>Yoga</td><td>HIIT</td><td>Yoga</td></tr>
+    <tr><td>8:00 AM</td><td>Strength</td><td>Cardio</td><td>Strength</td></tr>
+    <tr><td>6:00 PM</td><td>HIIT</td><td>Strength</td><td>Zumba</td></tr>
+    <tr><td>7:30 PM</td><td>Cardio</td><td>Yoga</td><td>HIIT</td></tr>
+  </table></div>
+</section>
+
+<section id="join">
+  <h3>Register <span>Today</span></h3>
+  <form>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="tel" placeholder="Phone Number">
+    <select><option>Select Plan</option><option>Basic</option><option>Pro</option><option>Elite</option></select>
+    <button class="btn" type="button">Register</button>
+  </form>
+</section>
+
+<footer>&copy; 2026 IronForge Fitness Center. No excuses.</footer>
+</body>
+</html>

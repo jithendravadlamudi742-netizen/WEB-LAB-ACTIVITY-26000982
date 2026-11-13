@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnHub - Online Learning Platform</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f3f6fb;color:#263238}
+header{background:#1a237e;color:#fff;padding:14px 24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:#fff;text-decoration:none;padding:6px 14px;border-radius:6px}
+nav a:hover{background:#3949ab}
+.hero{background:linear-gradient(120deg,#3949ab,#00acc1);color:#fff;text-align:center;padding:55px 20px}
+.hero h2{font-size:2.2rem;margin-bottom:8px}
+section{max-width:1100px;margin:0 auto;padding:30px 16px}
+h3.t{font-size:1.6rem;color:#1a237e;margin-bottom:16px}
+.cats{display:flex;flex-wrap:wrap;gap:10px}
+.cats span{background:#fff;border:2px solid #3949ab;color:#3949ab;padding:8px 18px;border-radius:25px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.12);transition:transform .3s}
+.card:hover{transform:translateY(-6px)}
+.thumb{height:150px;display:flex;align-items:center;justify-content:center;gap:24px;font-size:3.5rem;position:relative}
+.thumb i{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.7);color:#fff;font-size:.75rem;font-style:normal;padding:2px 8px;border-radius:4px}
+.play{background:rgba(255,255,255,.85);border-radius:50%;width:56px;height:56px;line-height:56px;text-align:center;font-size:1.6rem;color:#1a237e}
+.body{padding:16px}
+.body h4{margin-bottom:6px}
+.body p{font-size:.9rem;color:#607d8b;margin-bottom:8px}
+.tag{display:inline-block;background:#e8eaf6;color:#3949ab;font-size:.75rem;padding:2px 10px;border-radius:10px;margin-bottom:8px}
+.body ul{font-size:.85rem;margin:0 0 10px 18px;color:#455a64}
+.bar{background:#e0e0e0;border-radius:10px;height:10px;overflow:hidden}
+.fill{height:10px;background:linear-gradient(90deg,#00acc1,#43a047)}
+.pct{font-size:.8rem;color:#607d8b;margin:4px 0 10px}
+.btn{display:block;background:#3949ab;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold}
+.btn:hover{background:#00acc1}
+.inst{display:flex;align-items:center;gap:14px;background:#fff;border-radius:12px;padding:16px;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+.av{font-size:2.6rem;background:#e8eaf6;border-radius:50%;width:68px;height:68px;line-height:68px;text-align:center;flex-shrink:0}
+.inst p{font-size:.85rem;color:#607d8b}
+footer{background:#1a237e;color:#fff;text-align:center;padding:18px;margin-top:20px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎓 LearnHub</h1>
+  <nav><a href="#cats">Categories</a><a href="#courses">Courses</a><a href="#instructors">Instructors</a><a href="#progress">My Progress</a></nav>
+</header>
+
+<div class="hero">
+  <h2>Learn Anytime, Anywhere</h2>
+  <p>Video lessons from industry experts - build skills at your own pace.</p>
+</div>
+
+<section id="cats">
+  <h3 class="t">Course Categories</h3>
+  <div class="cats"><span>💻 Web Development</span><span>📊 Data Science</span><span>🎨 UI/UX Design</span><span>📱 App Development</span><span>☁ Cloud Computing</span></div>
+</section>
+
+<section id="courses">
+  <h3 class="t">Featured Courses</h3>
+  <div class="grid">
+    <div class="card"><div class="thumb" style="background:#ffcc80">💻<span class="play">▶</span><i>12h 30m</i></div>
+      <div class="body"><span class="tag">Web Development</span><h4>HTML, CSS &amp; Web Design</h4><p>Build responsive websites from scratch with modern HTML5 and CSS3.</p>
+      <b style="font-size:.85rem">You will learn:</b><ul><li>Structure pages with HTML5</li><li>Style with CSS layouts</li><li>Publish a portfolio site</li></ul>
+      <div class="bar"><div class="fill" style="width:70%"></div></div><div class="pct">70% completed</div><a class="btn" href="#courses">Enroll Now</a></div></div>
+    <div class="card"><div class="thumb" style="background:#a5d6a7">📊<span class="play">▶</span><i>20h 10m</i></div>
+      <div class="body"><span class="tag">Data Science</span><h4>Python for Data Analysis</h4><p>Analyse and visualise real datasets using Python libraries.</p>
+      <b style="font-size:.85rem">You will learn:</b><ul><li>Python programming basics</li><li>Clean data with Pandas</li><li>Create charts and insights</li></ul>
+      <div class="bar"><div class="fill" style="width:35%"></div></div><div class="pct">35% completed</div><a class="btn" href="#courses">Enroll Now</a></div></div>
+    <div class="card"><div class="thumb" style="background:#f48fb1">🎨<span class="play">▶</span><i>9h 45m</i></div>
+      <div class="body"><span class="tag">UI/UX Design</span><h4>UI/UX Design Fundamentals</h4><p>Design user-friendly interfaces and test them with real users.</p>
+      <b style="font-size:.85rem">You will learn:</b><ul><li>Design principles and colour</li><li>Wireframes and prototypes</li><li>Usability testing</li></ul>
+      <div class="bar"><div class="fill" style="width:10%"></div></div><div class="pct">10% completed</div><a class="btn" href="#courses">Enroll Now</a></div></div>
+  </div>
+</section>
+
+<section id="instructors">
+  <h3 class="t">Our Instructors</h3>
+  <div class="grid">
+    <div class="inst"><div class="av">👨‍💻</div><div><h4>Dr. Ramesh Babu</h4><p>Web Development - 12 years experience, 45k students</p></div></div>
+    <div class="inst"><div class="av">👩‍🔬</div><div><h4>Anitha Reddy</h4><p>Data Science - Ex-analyst, 30k students</p></div></div>
+    <div class="inst"><div class="av">👩‍🎨</div><div><h4>Meera Nair</h4><p>UI/UX Design - Senior designer, 20k students</p></div></div>
+  </div>
+</section>
+
+<section id="progress">
+  <h3 class="t">My Learning Progress</h3>
+  <div class="card"><div class="body">
+    <p>Overall completion</p><div class="bar" style="height:16px"><div class="fill" style="width:38%;height:16px"></div></div>
+    <div class="pct">38% - 3 courses in progress</div>
+  </div></div>
+</section>
+
+<footer>&copy; 2026 LearnHub. Keep learning, keep growing.</footer>
+</body>
+</html>
